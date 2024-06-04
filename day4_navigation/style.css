@@ -1,0 +1,100 @@
+html{scroll-behavior: smooth;transition: ease-in-out;}
+
+.header{ display: flex;}
+
+
+.headerlink{width: 20%;
+    display: block;
+    
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition: ease-in-out 300ms;
+
+
+}
+.headerlink:hover{opacity: 0 6;
+    transform: translateX(-20) scale(1.2);
+}
+
+.headertitle{width: 79%; color: chartreuse;display: flex; justify-content:center
+
+}
+/* =============Site Links============ */
+
+.sitelinks{ background-color: darkgrey; display: flex;justify-content: center;
+}
+.navlink{
+    display: inline-block;
+    text-align: center;
+    padding: 1em 2em;
+    width: 33.3%;
+    color: blanchedalmond;
+}
+.navlink:hover{
+    background-color: antiquewhite;
+    border: dashed 1px blue;
+    color: chocolate;
+}
+
+
+/*========MAINBODY==========*/
+.mainbody{ display: flex; flex-wrap: wrap;}
+
+.main_div { width: 66%;}
+
+.pagelinks { width: 30%;}
+
+.main_div section {background-color:pink ;padding: 1em 2em;}
+
+.main_div article{ background: peachpuff;padding: 1em 2em;}
+
+.pagelinks{padding: 1em;}
+
+.linknav{
+display: block;
+padding: 1em; text-decoration: none; color:rgb(153, 104, 40)
+}
+
+.linknav:hover{color: lightblue; 
+    font-weight: 900;}
+
+img {width: 100%; 
+    display: block;}
+
+.figureimg {width: 50%;
+margin: 2% auto;
+position: relative; 
+box-shadow: 1px 2px 3px fuchsia;
+border-radius: 6px;
+overflow: hidden;}
+
+.imgtitle{ position: absolute;color: fuchsia;font-size:xx-large;font-style: italic;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+top: 10%; left: 5%;right: 5%;
+text-align: center;}
+
+
+
+/*=======footer=====*/
+
+.footer{display: flex;background-color: darksalmon; color: cornflowerblue;padding: 30px;}
+
+
+
+.contact{ width: 33%;}
+
+.policieslink{
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+}
+
+.followicon{
+    width: 40px;
+    display: inline-block;
+    padding-right: 1em;
+    opacity: 1;
+}
+
+.followicon:hover{opacity: 1;}

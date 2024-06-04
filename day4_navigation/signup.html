@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signupstyling.css">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <a href="day4.html" class="linkhome">
+   <p class="backhome"><span>&#9970;</span> Home </p>
+   </a>
+   <form class="form"> 
+
+    <fieldset>
+<!--FORM COMPONENTS-->
+<legend class="formlegend"> Sign Up </legend>
+
+<!--INPUT control-->
+
+<div class="control">
+<label for="username">Username</label>
+<input type="text" name="username" id="username" placeholder="Type Username">
+<label for="username">Create Password</label>
+<input type="password" name="password" id="password" placeholder="Enter Password">
+</div>
+
+<div class="control">
+    <label for="color">Select a color</label>
+    <input type="color" name="selectcolor" id="color" value="#a113e9">
+    
+    </div>
+
+
+    <div class="control">
+        <label for="rating">How do you like my work</label>
+        <input type="range" name="ratingwork" id="rating" min="1" max="10">
+        
+        </div>
+
+        <div class="control">
+            <label for="appointment"> Appointment Date:</label>
+            <input type="date" name="" id="appointment">
+
+        </div>
+<hr>
+        <div class="control">
+            <p>Gender </p>
+            <label for="gender"> Female </label>
+            <input type="radio" name=" selectgender" value="female" id="female">
+            <label for="gender"> Male </label>
+            <input type="radio" name=" selectgender" value="Male" id="Male">
+            <label for="gender"> Other </label>
+            <input type="radio" name=" selectgender" value="Other" id="Other">
+        </div>
+<hr>
+<div class="control">
+    <p>How did you hear about us?</p>
+    <label for="socialmedia"> Social Media</label>
+    <input type="checkbox" name="aboutus" id="socialmedia">
+
+    <label for="internet"> Internet</label>
+    <input type="checkbox" name="aboutus" id="Internet">
+
+    <label for="internet"> Newspaper</label>
+    <input type="checkbox" name="aboutus" id="Newspaper">
+
+</div>
+<hr>
+
+        <!-- text area control-->
+        <div class="control">
+          <p>  <label for="comments"> feedback and comments</label></p>
+            <textarea name="textcomment" id="comments" rows="12" cols="100" placeholder="Leave feedback" ></textarea>
+
+        </div>
+        <hr>
+        <div class="control">
+
+<button type="submit">Submit Form</button>
+
+        </div>
+
+
+    </fieldset>
+   </form>
+</body>
+</html>
