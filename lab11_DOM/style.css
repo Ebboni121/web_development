@@ -1,0 +1,9 @@
+.changefontfamily{
+font-family: "arial black";
+text-decoration: underline;}
+
+.styletitle{text-align: center; color: blueviolet;}
+
+.info{background-color: blueviolet;color: aliceblue; padding: 20px; margin-top: 30px;}
+
+.moreinfo{box-shadow: 1px 1px 3px red;}

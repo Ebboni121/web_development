@@ -1,0 +1,149 @@
+.linkqcc{
+    display: block;
+    padding: 15px 50px;
+    background-color: darkcyan;
+    width: 50px;
+    margin: 20px 0px;
+    color: rgb(65, 225, 132)
+}
+
+.colorcontainer{
+
+    display: block;
+    padding: 15px 50px;
+    background-color: rgb(231, 215, 34);
+    width: 50px;
+    margin: 20px 0px;
+    color: rgb(15, 186, 138)
+}
+.colororange{
+
+    display: block;
+    padding: 15px 50px;
+    background-color: rgb(231, 34, 205);
+    width: 50px;
+    margin: 20px 0px;
+    color: rgb(15, 186, 138)
+}
+.colorolive{
+
+    display: block;
+    padding: 15px 50px;
+    background-color: rgb(8, 237, 16);
+    width: 50px;
+    margin: 20px 0px;
+    color: rgb(15, 186, 138)
+}
+.colorreset{
+
+    display: block;
+    padding: 15px 50px;
+    background-color: rgb(11, 11, 11);
+    width: 50px;
+    margin: 20px 0px;
+    color: rgb(15, 186, 138)
+}
+
+/***
+Tuesday, JUNE 18th
+****Event object in key event*/
+
+.btnpressme{width: 100px;
+    background-color: rgb(0, 255, 0);
+color: rgb(12, 99, 6);
+border-radius: 12px}
+
+
+.btnpressme:hover{
+    cursor: pointer;
+    color: blueviolet;
+    background-color: lavender;
+    font-size: 15px;
+}
+
+.btnactive{
+    background-color: rgb(52, 130, 198);
+    font-size: 15px;
+}
+#fruitlist li /* 'li" give each list item the listed elements*/{
+    padding: 12px 30px;
+    width: 200px;
+    border: solid 1px rgb(20, 166, 188);
+    list-style: none;
+}
+#fruitlist li:hover{
+    background-color: darkturquoise; cursor: pointer;
+}
+
+
+#content{
+    background-color: antiquewhite;
+    width: 1200px;
+    padding: 20px;
+}
+
+/* SLICE PHOTO GALLERY */
+.maincontainer, .gallerycontainer{
+    width: 1000px;
+    margin: auto;
+}
+.maincontainer{
+    position: relative;
+    z-index:0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallerycontainer{
+    position: absolute; z-index:1; overflow-x:scroll; white-space: nowrap;
+
+}
+.galleryimage{display: inline-block;
+    width:500px;}
+
+.btnleft, .btnright{
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(10, 83, 143);
+    color: rgb(161, 87, 102);
+    border: none;
+    font-size: 50px;
+    opacity:0.6
+}
+.btnleft:hover, .btnright:hover{opacity: 1; background-color: chartreuse;}
+
+
+.btnright{
+    right:-20px;
+    top: 150px;
+  
+}
+.btnleft{
+    left:-20px;
+    top: 150px;
+}
+
+.gotop{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(0, 255, 247, 0.374);
+    transition: ease-in-out 200ms;
+    display: none;
+}
+html {scroll-behavior: smooth;}
+
+.gotop a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+.gotop:hover{
+    background-color: blue;
+    box-shadow: 0px 0px 5px 2px;
+}
