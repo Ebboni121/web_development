@@ -14,7 +14,7 @@
     background-color: rgb(231, 215, 34);
     width: 50px;
     margin: 20px 0px;
-    color: rgb(15, 186, 138)
+    color: rgb(15, 186, 138);border: dashed 1px rgb(0, 0, 0);
 }
 .colororange{
 
@@ -23,7 +23,7 @@
     background-color: rgb(231, 34, 205);
     width: 50px;
     margin: 20px 0px;
-    color: rgb(15, 186, 138)
+    color: rgb(15, 186, 138);border: dashed 1px rgb(0, 0, 0);
 }
 .colorolive{
 
@@ -33,7 +33,7 @@
     width: 50px;
     margin: 20px 0px;
     color: rgb(15, 186, 138)
-}
+;border: dashed 1px rgb(0, 0, 0);}
 .colorreset{
 
     display: block;
@@ -41,7 +41,12 @@
     background-color: rgb(11, 11, 11);
     width: 50px;
     margin: 20px 0px;
-    color: rgb(15, 186, 138)
+    color: rgb(15, 186, 138);
+ border: dashed 1px rgb(0, 0, 0);
+ 
+}
+.boxes{display: flex
+
 }
 
 /***
@@ -95,7 +100,7 @@ border-radius: 12px}
 }
 
 .gallerycontainer{
-    position: absolute; z-index:1; overflow-x:scroll; white-space: nowrap;
+    position: relative; z-index:1; overflow:scroll; white-space: nowrap;
 
 }
 .galleryimage{display: inline-block;
@@ -147,3 +152,38 @@ html {scroll-behavior: smooth;}
     background-color: blue;
     box-shadow: 0px 0px 5px 2px;
 }
+
+/*============== JUNE 20th 2024========*/
+
+.greeting{display: none;}
+
+
+#myform{
+    background-color: aliceblue;
+    box-shadow: 1px 1px 3px grey;
+    border-radius:10px ;
+    width: 600px;
+    margin:50px auto ;
+    padding: 20px ;
+
+}
+.controlblcok{
+    margin-bottom: 20px;
+}
+.passwordmsg{
+    color: cornflowerblue;
+    margin-top: -1px;
+}
+.passworderror{
+    color: aqua;
+}
+.submitbtn{background-color: darksalmon;
+border-radius: 10px;
+padding: 10px 20px;}
+
+.submitbtn:hover {transform: translateY(5px);
+cursor: pointer;
+background-color: brown;}
+
+.commenterror{
+    color: rgb(149, 204, 23);}

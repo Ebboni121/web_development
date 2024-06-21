@@ -102,7 +102,7 @@ visitqcc.addEventListener("click",function(event){event.preventDefault()
 let content = document.querySelector("#content")
 let btnscrollright = document.querySelector(".btnscrollright")
 btnscrollright.addEventListener("click",function(){
-window.scrollBy(100.0)
+window.scrollBy(100,0)
 })
 
 /****=======================slice photo gallery=====================================*/
@@ -134,4 +134,70 @@ if(pxtop>=300){
     gotop.style.display ="block"
 }
 else{gotop.style.display = "none"}
+})
+
+/*Form Event
+input event */
+const myform= document.querySelector("#myform")
+const greeting = document.querySelector(".greeting")
+const greetingname = document.querySelector(".greeting p span")
+
+myform.addEventListener("submit", function(event){
+    //prevent the default form submission behavior
+    event.preventDefault()
+//start form validation, username
+    const usernameinput = document.querySelector("#username")
+// collect the input text
+    const username = usernameinput.value
+    //validation 1- make sure the user types a username before pressing submit
+    if (username.trim()===""){alert
+        ("Please Enter nsme")
+        return;
+    }
+//if validation passed,you can submitthe data to the server
+//greeting msg after validation
+greetingname.innerHTML = username
+greeting.style.display = "block"
+
+usernameinput.value = ""
+
+})
+/*password validation*/
+
+const passwordfield = document.querySelector("#passwordfield")
+const submitbtn = document.querySelector(".submitbtn")
+
+//collet the password error msg element
+const passworderror = document.querySelector(".passworderror")
+window.addEventListener("load", function(){
+    submitbtn.disabled = true
+    submitbtn.style.backgroundColor = "lightgray"
+})
+
+//check the length of the password
+passwordfield.addEventListener("input", function(){
+    let numbercharacter = passwordfield.value.length
+    if(numbercharacter<8){
+        passworderror.textContent = "password must be 8+ characters..."
+    }
+    else{
+        passworderror.textContent = "Good"
+        passworderror.style.color = "green"
+        passwordfield.style.border = "solid 2px green"
+        submitbtn.disabled = false
+        submitbtn.style.backgroundColor = "pink"
+    }
+})
+
+const commenterror = document.querySelector(".commenterror")
+
+comment.addEventListener("input", function(){
+    let numbercharacter = comment.value.length
+    if(numbercharacter<50){
+        commenterror.textContent = "comments must be between 50-100 character..."
+    }
+    else {(numbercharacter>100)
+        commenterror.textContent = "comment too long!"
+    }
+   
 })
