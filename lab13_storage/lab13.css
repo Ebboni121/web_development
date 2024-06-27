@@ -1,0 +1,11 @@
+/*keep the width of the window width to 100%*/
+*{box-sizing: border-box;}
+.myform fieldset{
+    width: 60%;
+    margin: 20px auto;
+    background-color: aliceblue;
+}
+.controlblock{
+    background-color: bisque;
+    margin-bottom: 20px 20px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporary storage</title>
+  <style>
+    /*keep the width of the window width to 100%*/
+*{box-sizing: border-box;}
+.myform fieldset{
+    width: 60%;
+    margin: 20px auto;
+    background-color: aliceblue;
+}
+.controlblock{
+    margin-bottom: 20px 20px;
+}
+
+img{width: 100%}
+.item1{width: 200px;
+height:400px;
+border: solid 2px pink}
+
+.item img{
+    padding: 10px;
+    height: 60%;
+    width: auto;
+    margin-left: 30%;
+}
+.itemname{
+    font-weight: bolder;
+    color: pink;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+.itemdescription {
+    color: rgb(255, 0, 191);margin-top: -20px; padding-left: 10px;
+
+}
+.itemprice { padding-left: 10px;}
+.saleprice {color: coral;
+font-size: 1.3em;}
+
+.item1btn{background-color: pink; 
+    display:block;
+color: aliceblue;
+width: 90%;
+
+margin-top:15px;
+}
+
+
+
+
+
+
+
+
+
+  </style>  
+
+
+
+</head>
+<body>
+<h1>Temporary Storage</h1>
+
+<form class="myform" action="display.html">
+<fieldset>
+    <legend>Survey</legend>
+
+    <div class="controlblock">
+    <label for="firstname">First name:</label>
+    <input type="text" name="Name" id="firstname">
+</div>
+
+<div class="controlblock">
+    <p>Select your favorite web language</p>
+    <label for="html">HTML</label>
+    <input type="radio" name="fav_language" id="HTML" value="HTML">
+    <label for="html">CSS</label>
+    <input type="radio" name="fav_language" id="CSS" value="CSS">
+    <label for="html">JS</label>
+    <input type="radio" name="fav_language" id="JS" value="JS">
+</div>
+
+<div class="controlblock">
+    <input type="submit" value="submit survey">
+</div>
+</fieldset>
+
+</form>
+
+<div class="displayresult">
+<h1> Transfer item to cart</h1>
+<div class="container"></div>
+<section class="item1">
+    
+    <img src="images/time.jpg" alt="time" class="imgitem1">
+    <p class="itemname"> Time</p>
+
+    <p class="itemdescription"> Time to Yourself</p>
+
+    <p class="itemprice"><s>$99</s> <b class="saleprice">7</b></p>
+
+    <form class="formitem1" action="cart.html" >
+        <label for="quantityitem1"> Quantity</label>
+        <input class="quantityinput" type="number" id="quantityitem1" max="24" min="1" >
+
+        <input type="submit" value="Add to cart" class="item1btn">
+        </form>
+</section>
+</div>
+
+
+
+
+
+<script src="lab13script.js"></script>
+
+
+    
+</body>
+</html>
