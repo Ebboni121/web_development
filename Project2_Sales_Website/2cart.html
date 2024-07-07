@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+<style>
+    body{background-color: #fff;}
+
+    .title {position:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; font-style: italic;color: #864caf;}
+
+.bagcontainer {
+    width: 1200px;
+    padding-left: 12px;
+    text-decoration:underline;
+    margin: auto;
+    border: solid 5px #864caf;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.itemimg{width: 30%;}
+
+.itemdescription {
+    width: 30%;
+}
+
+.quantity{width: 30%;}
+
+.itemprice {width: 30%;}
+</style>
+
+</head>
+<body>
+    <a href="project2.html"> Back Home</a>
+
+    <h1>Shopping Bag</h1>
+<section class="bagcontainer">
+
+<div class="itemimg">
+
+    <h2>Item</h2>
+</div>
+
+
+<div class="itemdescription">
+    <h2>Description</h2>
+</div>
+
+
+<div class="itemprice">
+    <h2>Price</h2>
+    <p class="price_display"></p>
+</div>
+
+<div class="quantity">
+    <h2> Quantity</h2>
+    <p class="quantity_display"></p>
+</div>
+
+<div class="totalprice">
+    <h2>Total Price</h2>
+    <p class="total_display"></p>
+</div>
+    </section>
+
+<div>
+
+    <script src="2cart.js"></script>
+    
+</body>
+</html>
